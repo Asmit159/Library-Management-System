@@ -24,9 +24,27 @@ This is my **first project after a month of learning Java**, created to practice
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/library-management-system.git
+   git clone https://github.com/asmit159/library-management-system.git
    cd library-management-system
 
+2. Compile the code:
+   javac LibraryManager.java
+
+3.Run the Program:
+java LibraryManager
+
+
+## 📌 Future Improvements(To be Done)
+
+This is just a prototype. Planned features:
+
+💾 File / Database storage for persistent data
+
+👥 Track which student issued a book
+
+🖥️ GUI or Web Interface (JavaFX / Spring Boot / MERN stack)
+
+🔍 More advanced search & filtering
 
 
 ## If you like this project, kindly give it a star ⭐
