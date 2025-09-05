@@ -109,6 +109,7 @@ class Library {
             System.out.println("7. Exit");
         } else {
             System.out.println("\n==== Student Menu ====");
+            System.out.println("1. Add Book");
             System.out.println("2. Show All Books");
             System.out.println("3. Search by Title");
             System.out.println("4. Search by Author");
@@ -303,3 +304,4 @@ class librarymanager {
         ob.display();
     }
 }
+
