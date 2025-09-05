@@ -46,5 +46,7 @@ This is just a prototype. Planned features:
 
 🔍 More advanced search & filtering
 
+(Code cleaned using chatgpt)
+
 
 ## If you like this project, kindly give it a star ⭐
