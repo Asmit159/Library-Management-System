@@ -51,4 +51,4 @@ This is just a prototype. Planned features:
 
 ## If you like this project, kindly give it a star ⭐
 
-## Original Author --  @Asmit159
+## Original Author @ME-- OTHERS CAN USE BUT SHOULD GIVE ME CREDIT.
