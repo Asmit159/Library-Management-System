@@ -13,7 +13,7 @@ Attribution alone does not grant permission. Unauthorized use is prohibited.
 A console-based **Library Management System** built in Java.  
 Supports adding, searching, issuing, and returning books.  
 
-![Demo Menu](docs/screenshots/menu.png)
+![Demo Menu](docs/Screenshot 2025-09-04 201746.png)
 
 ---
 
