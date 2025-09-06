@@ -51,9 +51,12 @@ This is just a prototype. Planned features:
 
 ## If you like this project, kindly give it a star ⭐
 
-## Credits & License
-**Original Author:** @ME  
+Copyright (c) 2025 @ME
 
-This project is open-source.  
-You are free to use, modify, and share this code, **but proper credit/attribution to the original author is required**.  
-See the [LICENSE](LICENSE) file for full details..
+All Rights Reserved.
+
+This source code and all associated files are the intellectual property of @ME that is @Asmit159.  
+No part of this project may be copied, modified, distributed, or used in any form  
+without the prior written permission of the author.  
+
+Attribution alone does not grant permission. Unauthorized use is prohibited.
