@@ -1,8 +1,5 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.HashMap;
+import java.io.*;
+import java.util.*;
 public class UserDatabaseManager {
     String fileName = "Users_Credential.csv";
 
@@ -59,7 +56,7 @@ public class UserDatabaseManager {
                 // Split by comma
                 String[] data = line.split(",");
 
-                // data[0] = Username, data[1] = Password, data[2] = Role
+                // data[0] = Username, data[1] = Password, role = data[2]
                 String username = data[0];
                 String password = data[1];
                 String role = data[2];
@@ -76,4 +73,3 @@ public class UserDatabaseManager {
         }
     }
 }
-
