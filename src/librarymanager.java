@@ -13,15 +13,10 @@ class Library{
 
     public void display() {
         System.out.println("====== Welcome to Library ======");
-        loadHash();
+        db.loadData(ausers, susers);
         userauth();
     }
-
-    //Loading existing credentials in database into hashmap
-    public void loadHash(){
-        db.loadData(ausers, susers);
-    }
-
+    
     // Authentication
     public void userauth() {
         ausers.put("root", "Admin123"); //Root user can only create new database
@@ -323,4 +318,5 @@ class librarymanager {
         Library ob = new Library();
         ob.display();
     }
+
 }
