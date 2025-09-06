@@ -19,11 +19,18 @@ public class UserDatabaseManager {
 
     //Add new users to the csv sheet
     public void write(String username,String password,String role){
-        try (FileWriter writer = new FileWriter(fileName,true)) {
-            writer.write(username+","+password+","+role+"\n");
+        try(BufferedReader br = new BufferedReader(new FileReader(fileName))){
+            try(FileWriter writer = new FileWriter(fileName,true)) {
+                writer.write(username+","+password+","+role+"\n");
+            }
+            catch(IOException e) {
+                e.printStackTrace();
+            }
         }
-        catch (IOException e) {
-            e.printStackTrace();
+        catch(IOException e){
+            System.out.println("Couldn't add creadentials to database! No database exists");
+            System.out.println("!!This will cause loss of your information!!");
+            System.out.println("Contact \"root\" to create a new database");
         }
     }
 
@@ -68,10 +75,4 @@ public class UserDatabaseManager {
         catch (IOException e) {
         }
     }
-
-    // public String getPassword() {
-    // }
-
-    // public String getRole() {
-    // }
 }
