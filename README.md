@@ -8,6 +8,7 @@ This is my **first project after a month of learning Java**, created to practice
 ## ✨ Features
 - 🔑 **User Authentication** (Admin & Student roles)
 - 👤 **Registration & Login System**
+- 🛢️ **Database to store usernames & passwords**
 - 📖 **Add, Show, Search Books** (by title & author)
 - 📦 **Issue & Return Books**
 - ✅ **Book Availability Tracking**
@@ -33,6 +34,15 @@ This is my **first project after a month of learning Java**, created to practice
 3.Run the Program:
 java LibraryManager
 
+## 🛢️ Database Usage
+A existing database sheet (csv) should be present to successfully store usernames and passwords. 
+
+If database file is absent, then the username and password is stored temporarily in the system and the user will not be able to login using the same credentials in the future.
+
+To create a new database sheet, login as root user.   
+**Username:** root   
+**Password:** Admin123   
+And select "Create new Database" from the menu 
 
 ## 📌 Future Improvements(To be Done)
 

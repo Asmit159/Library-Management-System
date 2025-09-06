@@ -1,23 +1,25 @@
 import java.util.*;
 
 // Main Library Class
-class Library {
+class Library{
 
     Scanner conin = new Scanner(System.in);
+    UserDatabaseManager db = new UserDatabaseManager();
     ArrayList<Book> books = new ArrayList<>();
     HashMap<String, String> ausers = new HashMap<>();
     HashMap<String, String> susers = new HashMap<>();
     int userRole = 0; // 1 = Admin, 2 = Student
+    String username = null;
 
     public void display() {
         System.out.println("====== Welcome to Library ======");
+        db.loadData(ausers, susers);
         userauth();
     }
-
+    
     // Authentication
     public void userauth() {
-        ausers.put("admin", "12345");
-        susers.put("student", "6789");
+        ausers.put("root", "Admin123"); //Root user can only create new database
         books.add(new Book(101, "Java Basics", "James Gosling"));
         books.add(new Book(102, "Algorithms", "CLRS"));
 
@@ -47,7 +49,7 @@ class Library {
     public void login() {
         System.out.println("\nLOGIN: ");
         System.out.print("Enter Username: ");
-        String username = conin.nextLine();
+        username = conin.nextLine();
         System.out.print("Enter Password: ");
         String password = conin.nextLine();
 
@@ -69,7 +71,7 @@ class Library {
     public void register() {
         System.out.println("REGISTER: ");
         System.out.print("Enter New Username: ");
-        String username = conin.nextLine();
+        username = conin.nextLine();
         System.out.print("Enter Password: ");
         String password = conin.nextLine();
         System.out.print("Retype Password: ");
@@ -85,10 +87,12 @@ class Library {
 
         if (role.equals("admin")) {
             ausers.put(username, password);
+            db.write(username,password,"admin"); //Loading credential into database
             System.out.println("Registration Successful. Please Login.");
             login();
         } else if (role.equals("student")) {
             susers.put(username, password);
+            db.write(username,password,"student"); //Loading credential into database
             System.out.println("Registration Successful. Please Login.");
             login();
         } else {
@@ -107,6 +111,8 @@ class Library {
             System.out.println("4. Search by Author");
             System.out.println("5. Issue Book");
             System.out.println("7. Exit");
+            if(username.equals("root"))
+                System.out.println("9. Create new Database");
         } else {
             System.out.println("\n==== Student Menu ====");
             System.out.println("2. Show All Books");
@@ -153,6 +159,16 @@ class Library {
             rBook(); 
             }
             break;
+
+            case 9:
+            if (userRole == 1 && username.equals("root")){
+            System.out.println("!!Creating new database will format any existing database!!");
+            System.out.println("Do you want to continue? (Y/N)");
+            String conf = conin.nextLine().toLowerCase();
+            if(conf.equals("y")) db.create();
+            System.out.println("New Database successfully created!");
+            break;
+            }
 
             default: System.out.println("Invalid Choice!"); break;
         }
@@ -292,7 +308,7 @@ class Library {
     public void exit() {
         System.out.println("\nThanks for Using This System.");
         System.out.println("See You Next Time.");
-        System.out.println("====== Library Management System, Created with ❤️ by Asmit159 ======");
+        System.out.println("====== Library Management System, Created with <3 by Asmit159 ======");
     }
 }
 
@@ -302,4 +318,5 @@ class librarymanager {
         Library ob = new Library();
         ob.display();
     }
+
 }
