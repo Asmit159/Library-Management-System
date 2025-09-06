@@ -31,21 +31,6 @@ public class UserDatabaseManager {
         }
     }
 
-    //Count number of entries
-    public int countRows() {
-        int rowCount = 0;
-
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            while (br.readLine() != null) {
-                rowCount++;
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return (rowCount - 1);
-    }
-
     public void loadData(HashMap<String, String> ausers, HashMap<String, String> susers) {
         String line;
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -73,3 +58,4 @@ public class UserDatabaseManager {
         }
     }
 }
+
