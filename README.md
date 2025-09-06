@@ -31,8 +31,8 @@ This is my **first project after a month of learning Java**, created to practice
 2. Compile the code:
    javac LibraryManager.java
 
-3.Run the Program:
-java LibraryManager
+3. Run the Program:
+   java LibraryManager
 
 ## 🛢️ Database Usage
 A existing database sheet (csv) should be present to successfully store usernames and passwords. 
