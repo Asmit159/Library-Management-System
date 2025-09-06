@@ -41,7 +41,7 @@ public class UserDatabaseManager {
                 // Split by comma
                 String[] data = line.split(",");
 
-                // data[0] = Username, data[1] = Password, role = data[2]
+                // data[0] = Username, data[1] = Password, data[2] = Role
                 String username = data[0];
                 String password = data[1];
                 String role = data[2];
@@ -58,4 +58,5 @@ public class UserDatabaseManager {
         }
     }
 }
+
 
