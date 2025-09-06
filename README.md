@@ -51,4 +51,9 @@ This is just a prototype. Planned features:
 
 ## If you like this project, kindly give it a star ⭐
 
-## Original Author @ME-- OTHERS CAN USE BUT SHOULD GIVE ME CREDIT.
+## Credits & License
+**Original Author:** @ME  
+
+This project is open-source.  
+You are free to use, modify, and share this code, **but proper credit/attribution to the original author is required**.  
+See the [LICENSE](LICENSE) file for full details..
