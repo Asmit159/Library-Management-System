@@ -39,10 +39,9 @@ A existing database sheet (csv) should be present to successfully store username
 
 If database file is absent, then the username and password is stored temporarily in the system and the user will not be able to login using the same credentials in the future.
 
-To create a new database sheet, login as root user.
-
-Username: root
-Password: Admin123
+To create a new database sheet, login as root user.   
+**Username:** root   
+**Password:** Admin123   
 And select "Create new Database" from the menu 
 
 ## 📌 Future Improvements(To be Done)
