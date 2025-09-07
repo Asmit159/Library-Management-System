@@ -1,4 +1,4 @@
-# 📚 Library Management System (Prototype V1)
+# 📚 Library Management System (Prototype v1.0)
 
 A simple **console-based Library Management System** built in Java.  
 This is my **first project after a month of learning Java**, created to practice **OOP, collections, and user authentication**.  
