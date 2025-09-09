@@ -38,9 +38,9 @@ java LibraryManager
 
 This is just a prototype. Planned features:
 
-💾 File / Database storage for persistent data
+💾 File / Database storage for persistent data(Coming Soon)
 
-👥 Track which student issued a book
+👥 Track which student issued a book(Coming Soon)
 
 🖥️ GUI or Web Interface (JavaFX / Spring Boot / MERN stack)
 
