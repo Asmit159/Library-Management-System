@@ -50,9 +50,3 @@ javac LibraryManager.java
 
 # 3. Run the program
 java LibraryManager
-
-
-<div align="center">
-
----
-<div align="center">
