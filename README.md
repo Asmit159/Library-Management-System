@@ -27,6 +27,16 @@ This is my **first project after one month of learning Java**, created to practi
 
 ---
 
+## 📌 Future Improvements(To be Done) 
+This is just a prototype. 
+# Planned features: 
+💾 File / Database storage for persistent data(Coming Soon) 
+👥 Track which student issued a book(Coming Soon) 
+🖥️ GUI or Web Interface (JavaFX / Spring Boot / MERN stack) 
+🔍 More advanced search & filtering
+
+---
+
 ## 🛠️ Tech Stack
 <div align="center">
 
@@ -37,7 +47,7 @@ This is my **first project after one month of learning Java**, created to practi
 </div>
 
 ---
-
+---
 ## 🚀 How to Run
 
 ```bash
@@ -50,3 +60,18 @@ javac LibraryManager.java
 
 # 3. Run the program
 java LibraryManager
+
+```
+---
+## ⚖️ License
+<div align="center">
+
+📜 All Rights Reserved License
+
+© 2025 @Asmit159
+.
+
+This source code and all associated files are the intellectual property of @Asmit159.
+No part of this project may be copied, modified, distributed, or used in any form without the prior written permission of the author.
+
+⚠️ Attribution alone does not grant permission. Unauthorized use is strictly prohibited.
