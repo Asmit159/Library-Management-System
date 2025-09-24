@@ -54,12 +54,5 @@ java LibraryManager
 
 <div align="center">
 
- ## ⚖️ License & Copyright
-
-© 2025 @Asmit159
- — All Rights Reserved.
-
-This source code and all associated files are the intellectual property of @Asmit159.
-No part of this project may be copied, modified, distributed, or used in any form without prior written permission from the author.
-
-⚠️ Attribution alone does not grant permission. Unauthorized use is strictly prohibited.
+---
+<div align="center">
