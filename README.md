@@ -63,6 +63,8 @@ java LibraryManager
 
 ```
 ---
+<div align="center">
+  
 ## ⚖️ License
 <div align="center">
 
